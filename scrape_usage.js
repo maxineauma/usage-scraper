@@ -135,6 +135,6 @@ parser.add_argument('-c', '--cutline', { help: 'Usage stats cutline. Must be: 0,
 
     }
 
-    fs.writeFileSync(_scrape + ".json", JSON.stringify(pokemonData));
+    fs.writeFileSync(_scrape + ".json", JSON.stringify(pokemonData, null, 4));
 
 })();
